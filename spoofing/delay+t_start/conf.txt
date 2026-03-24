@@ -1,0 +1,5 @@
+%% Spoofing settings
+spoof.active = 1; % [1: spoofing active, 0: spoofing disabled]
+spoof.delay = 10; % [s] additional delay introduced by the spoofer [s]
+spoof.t_start = 10; % [s] start spoofing time
+spoof.position = [45.064390, 7.657417, 239]; % spoofed position
