@@ -24,19 +24,19 @@ addpath('library')
 %% input data (GNSS logger)
 % To add your own data:
 % save data from GnssLogger App, and edit dirName and prFileName appropriately
-prFileName    = 'aperto_a_2.txt';
-dirName       = 'demoFiles/antani/';
+prFileName    = 'los_google_2.txt';
+dirName       = 'meas/';
 
 %% true position
-%param.llaTrueDegDegM = [45.01496, 7.43229, 600];
+param.llaTrueDegDegM = [45.064390, 7.657417, 239];
 %enter true WGS84 lla, if you know it:
 %param.llaTrueDegDegM = [37.422578, -122.081678, -28]; %Charleston Park Test Site
-param.llaTrueDegDegM = [];
+%param.llaTrueDegDegM = [];
 
 %% Spoofing settings
 spoof.active = 1; % [1: spoofing active, 0: spoofing disabled]
-spoof.target_prns = [32, 12, 6, 25, 11]; % NEW: Array of multiple satellites to spoof
-spoof.delay_seconds = 1e-6; % NEW: ~30 meter delay. Small enough to fool the solver!
+spoof.target_prns = [7, 1, 16, 8]; % Array of satellites to spoof
+spoof.delay_seconds = 1e-1; % Delay for selected satellites
 
 %% Plots
 plotAccDeltaRange = 0;
