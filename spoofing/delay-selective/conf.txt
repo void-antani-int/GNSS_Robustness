@@ -1,0 +1,3 @@
+spoof.active = 1; % [1: spoofing active, 0: spoofing disabled]
+spoof.target_prns = [7, 1, 16, 8]; % Array of satellites to spoof
+spoof.delay_seconds = 1e-1; % Delay for selected satellites
